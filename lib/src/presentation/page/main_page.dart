@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:tap_water_safety/src/scoped_model/place_model.dart';
-import 'package:tap_water_safety/src/widgets/headline.dart';
-import 'package:tap_water_safety/src/widgets/info_reveal.dart';
-import 'package:tap_water_safety/src/widgets/page_content.dart';
-import 'package:tap_water_safety/src/widgets/search_bar.dart';
+import 'package:provider/provider.dart';
+import 'package:tap_water_safety/src/presentation/viewmodel/place_view_model.dart';
+import 'package:tap_water_safety/src/presentation/widget/headline.dart';
+import 'package:tap_water_safety/src/presentation/widget/info/info_reveal.dart';
+import 'package:tap_water_safety/src/presentation/widget/page_content.dart';
+import 'package:tap_water_safety/src/presentation/widget/search/search_sheet.dart';
 
 final _scaffoldKey = GlobalKey<ScaffoldState>();
 
 class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final _selectedPlace = PlaceModel.of(context, rebuildOnChange: true).place;
+    final _selectedPlace = Provider.of<PlaceViewModel>(context).place;
 
     final _screenSize = MediaQuery.of(context).size;
 
@@ -27,7 +28,6 @@ class MainPage extends StatelessWidget {
       body: SafeArea(
         top: false,
         child: Stack(
-          alignment: Alignment.bottomCenter,
           children: <Widget>[
             PageContent(
               headlines: [
@@ -43,10 +43,7 @@ class MainPage extends StatelessWidget {
                 ),
               ],
             ),
-            SearchBar(
-              selectedPlace: _selectedPlace,
-              screenSize: _screenSize,
-            ),
+            SearchSheet(screenSize: _screenSize),
             InfoReveal(),
           ],
         ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tap_water_safety/src/widgets/headline.dart';
+import 'package:tap_water_safety/src/presentation/widget/headline.dart';
 
 class PageContent extends StatelessWidget {
   final Text text;

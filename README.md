@@ -7,10 +7,4 @@ built with [Flutter](https://flutter.dev).
 It's not 100% accurate - I made some small changes to the search bar, 
 also animations are not perfect...
 
-
-[Video](https://streamable.com/vlpr5)
-
-![screenshot](screenshots/screen1.jpg)
-![screenshot](screenshots/screen2.jpg)
-![screenshot](screenshots/screen3.jpg)
-![screenshot](screenshots/screen4.jpg)
+[![Demo](http://img.youtube.com/vi/NLZ3bfzFuYM/0.jpg)](http://www.youtube.com/watch?v=NLZ3bfzFuYM "Demo")

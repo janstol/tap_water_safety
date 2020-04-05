@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  static const ThemeColors safeColors = const ThemeColors(
+  static const ThemeColors safeColors = ThemeColors(
     primaryColor: AppColors.blue,
     darkColor: AppColors.blueDark,
     textColor: AppColors.grey,
   );
 
-  static const ThemeColors unsafeColors = const ThemeColors(
+  static const ThemeColors unsafeColors = ThemeColors(
     primaryColor: AppColors.red,
     darkColor: AppColors.redDark,
     textColor: AppColors.grey,
   );
 
-  static const ThemeColors maybeSafeColors = const ThemeColors(
+  static const ThemeColors maybeSafeColors = ThemeColors(
     primaryColor: AppColors.lightBlue,
     darkColor: AppColors.lightBlueDark,
     textColor: AppColors.grey,

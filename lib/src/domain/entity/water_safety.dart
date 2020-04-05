@@ -29,4 +29,13 @@ class WaterSafety {
         firstHeadlineText = 'Tap water',
         secondHeadlineText = 'may be safe to drink.',
         maxLines = 3;
+
+  @override
+  int get hashCode => safety.hashCode;
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        other is WaterSafety && safety == other.safety;
+  }
 }

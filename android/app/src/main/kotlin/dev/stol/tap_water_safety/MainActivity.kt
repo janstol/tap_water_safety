@@ -1,4 +1,4 @@
-package com.example.tap_water_safety
+package dev.stol.tap_water_safety
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
